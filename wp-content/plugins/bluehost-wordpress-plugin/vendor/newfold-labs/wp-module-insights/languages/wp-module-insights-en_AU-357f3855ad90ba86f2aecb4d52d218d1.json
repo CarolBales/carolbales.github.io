@@ -1,0 +1,39 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/PerformanceScans\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en_AU",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Last 30 days": [
+                "Last 30 days"
+            ],
+            "Last 60 days": [
+                "Last 60 days"
+            ],
+            "All time results": [
+                "All time results"
+            ],
+            "Chart view": [
+                "Chart view"
+            ],
+            "Table view": [
+                "Table view"
+            ],
+            "Performance Scans": [
+                "Performance Scans"
+            ],
+            "Switch between chart and table view": [
+                "Switch between chart and table view"
+            ],
+            "Time range for performance trend chart": [
+                "Time range for performance trend chart"
+            ]
+        }
+    }
+}

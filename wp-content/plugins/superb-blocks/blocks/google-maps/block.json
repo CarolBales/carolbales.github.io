@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/google-maps",
+  "version": "0.2.0",
+  "title": "Superb Google Maps",
+  "category": "superb-addons-blocks",
+  "icon": "location",
+  "description": "Embed an interactive Google Map with zoom control, satellite view, and 110+ language options — no API key required.",
+  "keywords": [
+    "maps",
+    "google",
+    "google maps",
+    "directions",
+    "position",
+    "address",
+    "location"
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full", "left", "right"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

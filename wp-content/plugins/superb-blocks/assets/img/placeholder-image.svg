@@ -1,0 +1,11 @@
+<svg width="475" height="310" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#9e9e9e"/><stop offset="100%" stop-color="#646464"/>
+        </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad1)"/>
+    <text x="50%" y="50%" dominant-baseline="middle" font-family="-apple-system, Inter, sans-serif" text-anchor="middle" fill="#FFF" font-size="20">
+        Placeholder Image
+    </text>
+</svg>

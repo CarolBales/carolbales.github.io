@@ -1,0 +1,118 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/popup",
+  "version": "0.1.0",
+  "title": "Superb Popup",
+  "category": "superb-addons-blocks",
+  "icon": "admin-page",
+  "description": "A customizable popup/modal with any block content. Pair with the Popup Trigger button to open it from anywhere on the page.",
+  "keywords": ["popup", "modal", "dialog", "overlay", "lightbox"],
+  "supports": {
+    "html": false,
+    "align": false,
+    "multiple": true,
+    "reusable": true
+  },
+  "attributes": {
+    "popupId": {
+      "type": "string"
+    },
+    "popupName": {
+      "type": "string",
+      "default": ""
+    },
+    "popupWidth": {
+      "type": "string",
+      "default": "600px"
+    },
+    "popupWidthTablet": {
+      "type": "string"
+    },
+    "popupWidthMobile": {
+      "type": "string"
+    },
+    "popupHeight": {
+      "type": "string"
+    },
+    "popupHeightTablet": {
+      "type": "string"
+    },
+    "popupHeightMobile": {
+      "type": "string"
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 50
+    },
+    "showCloseButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "closeOnOverlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "closeOnEsc": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOverlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "popupPadding": {
+      "type": "string",
+      "default": "32px"
+    },
+    "popupPaddingTablet": {
+      "type": "string"
+    },
+    "popupPaddingMobile": {
+      "type": "string"
+    },
+    "popupBorderRadius": {
+      "type": "string",
+      "default": "8px"
+    },
+    "popupBorderRadiusTablet": {
+      "type": "string"
+    },
+    "popupBorderRadiusMobile": {
+      "type": "string"
+    },
+    "closeButtonSize": {
+      "type": "number"
+    },
+    "triggerOnLoad": {
+      "type": "boolean",
+      "default": true
+    },
+    "triggerLoadDelay": {
+      "type": "number",
+      "default": 0
+    },
+    "popupPosition": {
+      "type": "string"
+    },
+    "popupPositionTablet": {
+      "type": "string"
+    },
+    "popupPositionMobile": {
+      "type": "string"
+    },
+    "isPreview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "styles": [
+    { "name": "default", "label": "Default", "isDefault": true },
+    { "name": "minimal", "label": "Minimal" },
+    { "name": "announcement", "label": "Announcement" }
+  ],
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,27 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/LighthouseReport\/Content.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "Last checked %s": [
+                "Derniers pourcentages v\u00e9rifi\u00e9s"
+            ],
+            "View Detailed Report": [
+                "Voir le rapport d\u00e9taill\u00e9"
+            ],
+            "Run Test": [
+                "Test de course"
+            ],
+            "Enable recurring scans": [
+                "Activez les scans r\u00e9currents"
+            ]
+        }
+    }
+}

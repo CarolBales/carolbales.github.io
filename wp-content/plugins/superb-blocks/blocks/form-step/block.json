@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/form-step",
+  "parent": ["superb-addons/multistep-form"],
+  "version": "0.1.0",
+  "title": "Superb Form Step",
+  "category": "superb-addons-blocks",
+  "icon": "editor-ol",
+  "description": "A single step within a Multi-Step Form block.",
+  "keywords": ["step", "page", "section", "form"],
+  "supports": {
+    "html": false,
+    "inserter": true,
+    "reusable": false
+  },
+  "attributes": {
+    "stepLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "stepDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "stepBgColor": {
+      "type": "string"
+    },
+    "stepBgColorWPC": {
+      "type": "string"
+    },
+    "hideTitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoAdvance": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

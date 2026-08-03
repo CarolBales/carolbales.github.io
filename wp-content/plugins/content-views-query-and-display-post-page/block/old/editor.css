@@ -1,0 +1,16 @@
+.content-views-block select {
+	/*line-height: 30px !important;*/
+	max-width: 100% !important;
+}
+
+.content-views-block label {
+	display: block !important;
+}
+
+.content-views-block a {
+	font-size: 14px;
+}
+
+.content-views-block .pt-cv-wrapper * {
+	pointer-events: none !important;
+}

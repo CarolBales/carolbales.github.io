@@ -1,0 +1,39 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/PerformanceScans\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pt_BR",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "Last 30 days": [
+                "\u00daltimos 30 dias"
+            ],
+            "Last 60 days": [
+                "\u00daltimos 60 dias"
+            ],
+            "All time results": [
+                "Resultados de todos os tempos"
+            ],
+            "Chart view": [
+                "Vista do gr\u00e1fico"
+            ],
+            "Table view": [
+                "Vista de mesa"
+            ],
+            "Performance Scans": [
+                "Varreduras de desempenho"
+            ],
+            "Switch between chart and table view": [
+                "Alternar entre vista de gr\u00e1fico e visualiza\u00e7\u00e3o de tabela"
+            ],
+            "Time range for performance trend chart": [
+                "Faixa de tempo para o gr\u00e1fico de tend\u00eancia de desempenho"
+            ]
+        }
+    }
+}

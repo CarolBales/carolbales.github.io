@@ -1,0 +1,487 @@
+/* === Driver.js Base === */
+.driver-active .driver-overlay,
+.driver-active * {
+    pointer-events: none
+}
+
+.driver-active .driver-active-element,
+.driver-active .driver-active-element *,
+.driver-popover,
+.driver-popover * {
+    pointer-events: auto
+}
+
+@keyframes animate-fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.driver-fade .driver-overlay {
+    animation: animate-fade-in .2s ease-in-out
+}
+
+.driver-popover {
+    all: unset;
+    box-sizing: border-box;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 1px 10px #0006;
+    z-index: 1000000000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff
+}
+
+.driver-popover * {
+    font-family: Helvetica Neue, Inter, ui-sans-serif, "Apple Color Emoji", Helvetica, Arial, sans-serif
+}
+
+.driver-popover-title {
+    font: 19px/normal sans-serif;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    line-height: 1.5;
+    zoom: 1;
+    margin: 0
+}
+
+.driver-popover-close-btn {
+    all: unset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #d2d2d2;
+    z-index: 1;
+    text-align: center;
+    transition: color;
+    transition-duration: .2s
+}
+
+.driver-popover-close-btn:hover,
+.driver-popover-close-btn:focus {
+    color: #2d2d2d
+}
+
+.driver-popover-title[style*=block]+.driver-popover-description {
+    margin-top: 5px
+}
+
+.driver-popover-description {
+    margin-bottom: 0;
+    font: 14px/normal sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    zoom: 1
+}
+
+.driver-popover-footer {
+    margin-top: 15px;
+    text-align: right;
+    zoom: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.driver-popover-progress-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #727272;
+    zoom: 1
+}
+
+.driver-popover-footer button {
+    all: unset;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 3px 7px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    background-color: #fff;
+    color: #2d2d2d;
+    font: 12px/normal sans-serif;
+    cursor: pointer;
+    outline: 0;
+    zoom: 1;
+    line-height: 1.3;
+    border: 1px solid #ccc;
+    border-radius: 3px
+}
+
+.driver-popover-footer .driver-popover-btn-disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+:not(body):has(>.driver-active-element) {
+    overflow: hidden !important
+}
+
+.driver-no-interaction,
+.driver-no-interaction * {
+    pointer-events: none !important
+}
+
+.driver-popover-footer button:hover,
+.driver-popover-footer button:focus {
+    background-color: #f7f7f7
+}
+
+.driver-popover-navigation-btns {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end
+}
+
+.driver-popover-navigation-btns button+button {
+    margin-left: 4px
+}
+
+.driver-popover-arrow {
+    content: "";
+    position: absolute;
+    border: 5px solid #fff
+}
+
+.driver-popover-arrow-side-over {
+    display: none
+}
+
+.driver-popover-arrow-side-left {
+    left: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent
+}
+
+.driver-popover-arrow-side-right {
+    right: 100%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent
+}
+
+.driver-popover-arrow-side-top {
+    top: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent
+}
+
+.driver-popover-arrow-side-bottom {
+    bottom: 100%;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent
+}
+
+.driver-popover-arrow-side-center {
+    display: none
+}
+
+.driver-popover-arrow-side-left.driver-popover-arrow-align-start,
+.driver-popover-arrow-side-right.driver-popover-arrow-align-start {
+    top: 15px
+}
+
+.driver-popover-arrow-side-top.driver-popover-arrow-align-start,
+.driver-popover-arrow-side-bottom.driver-popover-arrow-align-start {
+    left: 15px
+}
+
+.driver-popover-arrow-align-end.driver-popover-arrow-side-left,
+.driver-popover-arrow-align-end.driver-popover-arrow-side-right {
+    bottom: 15px
+}
+
+.driver-popover-arrow-side-top.driver-popover-arrow-align-end,
+.driver-popover-arrow-side-bottom.driver-popover-arrow-align-end {
+    right: 15px
+}
+
+.driver-popover-arrow-side-left.driver-popover-arrow-align-center,
+.driver-popover-arrow-side-right.driver-popover-arrow-align-center {
+    top: 50%;
+    margin-top: -5px
+}
+
+.driver-popover-arrow-side-top.driver-popover-arrow-align-center,
+.driver-popover-arrow-side-bottom.driver-popover-arrow-align-center {
+    left: 50%;
+    margin-left: -5px
+}
+
+.driver-popover-arrow-none {
+    display: none
+}
+
+/* === Superb Addons Tour Overrides === */
+
+/* --- Popover Container --- */
+.superbaddons-guided-tour-popover.driver-popover {
+    min-width: 300px;
+    max-width: 340px;
+    padding: 20px 24px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+    border-top: 3px solid #6448e7;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.superbaddons-guided-tour-popover.driver-popover * {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* --- Slide-in animation --- */
+@keyframes superbaddons-tour-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.driver-fade .superbaddons-guided-tour-popover.driver-popover {
+    animation: superbaddons-tour-slide-in 0.25s ease-out;
+}
+
+/* --- Title --- */
+.superbaddons-guided-tour-popover .driver-popover-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #263238;
+    line-height: 1.4;
+}
+
+/* --- Description --- */
+.superbaddons-guided-tour-popover .driver-popover-description {
+    font-size: 13px;
+    font-weight: 400;
+    color: #546E7A;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* --- Close Button --- */
+.superbaddons-guided-tour-popover .driver-popover-close-btn {
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #90A4AE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 150ms ease, color 200ms ease;
+}
+
+.superbaddons-guided-tour-popover .driver-popover-close-btn:hover,
+.superbaddons-guided-tour-popover .driver-popover-close-btn:focus {
+    background-color: #F5F5F5;
+    color: #263238;
+}
+
+/* --- Arrow (larger) --- */
+.superbaddons-guided-tour-popover .driver-popover-arrow {
+    border-width: 8px;
+    z-index: 1;
+}
+
+/* --- Footer --- */
+.superbaddons-guided-tour-popover .driver-popover-footer {
+    margin-top: 16px;
+}
+
+/* --- Buttons: shared base --- */
+.superbaddons-guided-tour-popover .driver-popover-footer button {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    line-height: 1.3;
+    text-shadow: none;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+/* Previous button: secondary */
+.superbaddons-guided-tour-popover .driver-popover-prev-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    color: #263238;
+}
+
+.superbaddons-guided-tour-popover .driver-popover-prev-btn:hover,
+.superbaddons-guided-tour-popover .driver-popover-prev-btn:focus {
+    background-color: #F5F5F5;
+    border-color: #B0BEC5;
+}
+
+/* Next button: primary */
+.superbaddons-guided-tour-popover .driver-popover-next-btn {
+    background-color: #6448e7;
+    border: 1px solid #6448e7;
+    color: #FFFFFF;
+}
+
+.superbaddons-guided-tour-popover .driver-popover-next-btn:hover,
+.superbaddons-guided-tour-popover .driver-popover-next-btn:focus {
+    background-color: #7e63fc;
+    border-color: #7e63fc;
+}
+
+/* --- Progress Bar (absolute bottom, acts as card bottom edge) --- */
+.superbaddons-tour-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background-color: #E0E0E0;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+}
+
+.superbaddons-tour-progress-fill {
+    height: 100%;
+    background-color: #6448e7;
+    transition: width 0.3s ease;
+}
+
+/* --- Step Counter (footer left) --- */
+.superbaddons-tour-progress-counter {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #90A4AE;
+}
+
+/* --- Click-target Pulse Animation --- */
+@keyframes superbaddons-tour-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(100, 72, 231, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(100, 72, 231, 0);
+    }
+}
+
+.superbaddons-tour-click-target {
+    animation: superbaddons-tour-pulse 2s ease-in-out infinite;
+}
+
+/* --- Action Hint Callout --- */
+.superbaddons-tour-action-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: #F3F0FD;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6448e7;
+}
+
+.superbaddons-tour-action-hint svg {
+    flex-shrink: 0;
+}
+
+/* --- Loading Hint Callout --- */
+.superbaddons-tour-loading-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: #FFF8E1;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #F59E0B;
+}
+
+@keyframes superbaddons-tour-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.superbaddons-tour-loading-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #FDE68A;
+    border-top-color: #F59E0B;
+    border-radius: 50%;
+    animation: superbaddons-tour-spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+/* --- Completion Step --- */
+.superbaddons-tour-complete.driver-popover {
+    border-top-color: #00BC87;
+    text-align: center;
+    padding: 28px 24px;
+}
+
+.superbaddons-tour-complete .driver-popover-title {
+    font-size: 18px;
+}
+
+.superbaddons-tour-complete .driver-popover-footer {
+    justify-content: center;
+}
+
+.superbaddons-tour-complete .driver-popover-next-btn {
+    background-color: #00BC87;
+    border-color: #00BC87;
+}
+
+.superbaddons-tour-complete .driver-popover-next-btn:hover,
+.superbaddons-tour-complete .driver-popover-next-btn:focus {
+    background-color: #09c590;
+    border-color: #09c590;
+}
+
+.superbaddons-tour-complete .superbaddons-tour-complete-icon {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+
+/* --- Modal interactivity during tours --- */
+.driver-active .superbaddons-admindashboard-modal-wrapper,
+.driver-active .superbaddons-admindashboard-modal-wrapper * {
+    pointer-events: auto;
+}
+
+/* --- Overflow Hidden Utility --- */
+.superb-addons-guided-tour-overflow-hidden {
+    overflow: hidden !important;
+}

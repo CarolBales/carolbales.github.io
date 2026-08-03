@@ -1,0 +1,24 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/ScanDiagnostics.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "es_MX",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Diagnostics": [
+                "Diagn\u00f3stico"
+            ],
+            "Issues that affected your scores. Expand an item for the full audit and data.": [
+                "Problemas que afectaron a tus puntuaciones. Ampl\u00eda un elemento para la auditor\u00eda y los datos completos."
+            ],
+            "No failing audits for this run.": [
+                "No habr\u00e1 auditor\u00edas fallidas para esta ejecuci\u00f3n."
+            ]
+        }
+    }
+}

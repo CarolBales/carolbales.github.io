@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/cover-image",
+  "version": "0.2.0",
+  "title": "Superb Cover Image",
+  "category": "superb-addons-blocks",
+  "icon": "cover-image",
+  "description": "A pure image block with focal point control, responsive height settings, and flexible background sizing.",
+  "keywords": [
+    "background image",
+    "image",
+    "background",
+    "header",
+    "hero",
+    "cover"
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

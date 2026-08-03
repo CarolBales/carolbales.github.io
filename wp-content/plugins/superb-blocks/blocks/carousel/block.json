@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/carousel",
+  "version": "0.1.0",
+  "title": "Superb Carousel Slider",
+  "category": "superb-addons-blocks",
+  "icon": "slides",
+  "description": "A flexible content carousel. Add slides with any block content and navigate using arrows or dots.",
+  "keywords": ["carousel", "slider", "slideshow", "slides", "gallery"],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": false,
+      "link": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "attributes": {
+    "showDots": {
+      "type": "boolean",
+      "default": true
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "adaptiveHeight": {
+      "type": "boolean",
+      "default": true
+    },
+    "dotSize": {
+      "type": "number"
+    },
+    "dotGap": {
+      "type": "number"
+    },
+    "arrowSize": {
+      "type": "number"
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

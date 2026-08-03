@@ -1,0 +1,42 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/LighthouseReport\/LighthouseReportEmbed.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Lighthouse Report": [
+                "Vuurtorenrapport"
+            ],
+            "Last checked %s": [
+                "Laatst gecontroleerd %s"
+            ],
+            "Your report is being generated": [
+                "Je rapport wordt gegenereerd"
+            ],
+            "No insights yet.": [
+                "Nog geen inzichten."
+            ],
+            "This usually takes a few minutes. You can refresh or come back later, results will show up once ready.": [
+                "Dit duurt meestal een paar minuten. Je kunt het verversen of later terugkomen, de resultaten verschijnen zodra ze klaar zijn."
+            ],
+            "Run your first test to generate performance, accessibility, and SEO data.": [
+                "Voer je eerste test uit om prestatie-, toegankelijkheids- en SEO-gegevens te genereren."
+            ],
+            "Loading\u2026": [
+                "Laden..."
+            ],
+            "Run Scan": [
+                "Run Scan"
+            ],
+            "Open Site Insights": [
+                "Open Site Insights"
+            ]
+        }
+    }
+}

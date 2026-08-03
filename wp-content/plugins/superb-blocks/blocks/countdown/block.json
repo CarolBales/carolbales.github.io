@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/countdown",
+  "version": "0.1.0",
+  "title": "Superb Countdown",
+  "category": "superb-addons-blocks",
+  "icon": "clock",
+  "description": "A customizable countdown timer block with multiple visual styles.",
+  "keywords": ["countdown", "timer", "date", "deadline", "sale", "event"],
+  "styles": [
+    { "name": "default", "label": "Default", "isDefault": true },
+    { "name": "boxed", "label": "Boxed" },
+    { "name": "circle", "label": "Circle" },
+    { "name": "minimal", "label": "Minimal" },
+    { "name": "flip", "label": "Flip" },
+    { "name": "inline", "label": "Inline" }
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "attributes": {
+    "style": {
+      "type": "object",
+      "default": {
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|superbspacing-xxsmall",
+            "right": "var:preset|spacing|superbspacing-xxsmall",
+            "bottom": "var:preset|spacing|superbspacing-xxsmall",
+            "left": "var:preset|spacing|superbspacing-xxsmall"
+          }
+        }
+      }
+    },
+    "countdownId": { "type": "string" },
+    "targetDate": { "type": "string", "default": "" },
+    "showDays": { "type": "boolean", "default": true },
+    "showHours": { "type": "boolean", "default": true },
+    "showMinutes": { "type": "boolean", "default": true },
+    "showSeconds": { "type": "boolean", "default": true },
+    "daysLabel": { "type": "string", "default": "Days" },
+    "hoursLabel": { "type": "string", "default": "Hours" },
+    "minutesLabel": { "type": "string", "default": "Minutes" },
+    "secondsLabel": { "type": "string", "default": "Seconds" },
+    "expiryAction": { "type": "string", "default": "hide-block" },
+    "expiryMessage": { "type": "string", "default": "" },
+    "contentPosition": { "type": "string", "default": "after" },
+    "countdownBackground": { "type": "string", "default": "" },
+    "numberColor": { "type": "string", "default": "" }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

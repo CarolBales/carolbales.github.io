@@ -1,0 +1,21 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/scan-result-details\/LabMetricsCards.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "it",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Core Web Vitals": [
+                "Core Web Vitals"
+            ],
+            "Values are from this Lighthouse run (lab environment). Bars show how each value falls within good, needs improvement, and poor ranges.": [
+                "I valori provengono da questo ambiente gestito dal faro (laboratorio). Le barre mostrano come ogni valore rientra tra buoni, necessita di miglioramenti e scarsi intervalli."
+            ]
+        }
+    }
+}

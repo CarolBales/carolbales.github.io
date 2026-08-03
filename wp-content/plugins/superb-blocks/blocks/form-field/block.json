@@ -1,0 +1,182 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/form-field",
+  "parent": ["superb-addons/form", "superb-addons/form-step"],
+  "version": "0.1.0",
+  "title": "Form Field",
+  "category": "superb-addons-blocks",
+  "icon": "editor-textcolor",
+  "description": "A form field. Select the field type, configure validation, and set conditional logic.",
+  "keywords": ["field", "input", "form", "text", "email"],
+  "supports": {
+    "html": false,
+    "inserter": true,
+    "reusable": false
+  },
+  "attributes": {
+    "fieldId": {
+      "type": "string"
+    },
+    "fieldType": {
+      "type": "string",
+      "default": "text"
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "placeholder": {
+      "type": "string",
+      "default": ""
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "defaultValue": {
+      "type": "string",
+      "default": ""
+    },
+    "fieldName": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": 100
+    },
+    "options": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "minLength": {
+      "type": "number"
+    },
+    "maxLength": {
+      "type": "number"
+    },
+    "showCharacterCounter": {
+      "type": "boolean",
+      "default": true
+    },
+    "minValue": {
+      "type": "number"
+    },
+    "maxValue": {
+      "type": "number"
+    },
+    "pattern": {
+      "type": "string",
+      "default": ""
+    },
+    "patternMessage": {
+      "type": "string",
+      "default": ""
+    },
+    "hideLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "sensitive": {
+      "type": "boolean",
+      "default": false
+    },
+    "conditionalLogic": {
+      "type": "object",
+      "default": {
+        "action": "show",
+        "ruleGroups": []
+      }
+    },
+    "calculatedSettings": {
+      "type": "object",
+      "default": {
+        "formula": "",
+        "prefix": "",
+        "suffix": "",
+        "roundResult": -1
+      }
+    },
+    "signatureSettings": {
+      "type": "object",
+      "default": {
+        "canvasHeight": 150,
+        "placeholderText": "",
+        "clearText": ""
+      }
+    },
+    "sliderSettings": {
+      "type": "object",
+      "default": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "showValue": true,
+        "prefix": "",
+        "suffix": ""
+      }
+    },
+    "colorSettings": {
+      "type": "object",
+      "default": {
+        "defaultColor": "",
+        "showHexInput": false
+      }
+    },
+    "ratingSettings": {
+      "type": "object",
+      "default": {
+        "maxRating": 5,
+        "defaultRating": 0
+      }
+    },
+    "fileSettings": {
+      "type": "object",
+      "default": {
+        "accept": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".pdf", ".doc", ".docx", ".txt", ".xls", ".xlsx", ".csv"],
+        "maxFileSize": 5,
+        "multiple": false,
+        "maxFiles": 5
+      }
+    },
+    "dateSettings": {
+      "type": "object",
+      "default": {
+        "dateConstraint": "none",
+        "minDateMode": "none",
+        "maxDateMode": "none",
+        "minDate": "",
+        "maxDate": "",
+        "minDateOffset": 0,
+        "maxDateOffset": 0,
+        "excludeDays": [],
+        "dateTimeMessage": ""
+      }
+    },
+    "timeSettings": {
+      "type": "object",
+      "default": {
+        "minTime": "",
+        "maxTime": "",
+        "timeStep": 1,
+        "dateTimeMessage": ""
+      }
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

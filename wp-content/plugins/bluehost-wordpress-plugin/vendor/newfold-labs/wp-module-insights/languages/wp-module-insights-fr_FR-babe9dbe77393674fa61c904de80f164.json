@@ -1,0 +1,30 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/utils\/formatRelativeTime.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "just now": [
+                "\u00c0 l\u2019instant"
+            ],
+            "%d min ago": [
+                ""
+            ],
+            "%d hour ago": [
+                ""
+            ],
+            "%d day ago": [
+                ""
+            ],
+            "%d week ago": [
+                ""
+            ]
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/ratings",
+  "version": "0.2.0",
+  "title": "Superb Ratings",
+  "category": "superb-addons-blocks",
+  "icon": "star-filled",
+  "description": "Display star ratings with partial fills and labeled rating bars — perfect for reviews and comparisons.",
+  "keywords": [
+    "rating",
+    "ratings",
+    "star",
+    "stars",
+    "review",
+    "reviews",
+    "feedback"
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full", "left", "right"],
+    "color": {
+      "background": true,
+      "gradients": true,
+      "text": true,
+      "link": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

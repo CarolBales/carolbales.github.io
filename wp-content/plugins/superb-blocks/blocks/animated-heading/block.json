@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/animated-heading",
+  "version": "0.2.0",
+  "title": "Superb Animated Heading",
+  "category": "superb-addons-blocks",
+  "icon": "redo",
+  "description": "Add eye-catching letter-by-letter animations to your headings. Choose from 13 effects with adjustable speed and looping.",
+  "keywords": ["animated", "animation", "heading", "header", "h1", "h2", "h3"],
+  "supports": {
+    "html": false,
+    "inserter": false,
+    "align": ["wide", "full", "left", "right"],
+    "color": {
+      "background": true,
+      "gradients": false,
+      "text": false,
+      "link": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

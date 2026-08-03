@@ -1,0 +1,18 @@
+#TB_window .updraft-deinstall-footer {
+	padding: 13px 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	border-top: 1px solid #DCDCDE;
+	background: #F6F7F7;
+}
+
+#TB_window .updraft-deinstall-footer .button {
+	padding: 0 14px;
+	font-size: 14px;
+	vertical-align: middle;
+	min-height: 40px;
+	margin-bottom: 4px;
+}

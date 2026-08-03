@@ -1,0 +1,1 @@
+jQuery(document).ready((function(e){wp.data.subscribe((function(){e("#uagb-blocks-editor-spacing-style").remove()}))}));

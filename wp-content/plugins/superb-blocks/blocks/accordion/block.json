@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/accordion-block",
+  "version": "0.2.0",
+  "title": "Superb Toggle",
+  "category": "superb-addons-blocks",
+  "icon": "arrow-down-alt2",
+  "description": "A collapsible toggle section that expands to reveal content. Perfect for FAQs, hiding long content, and disclosure panels.",
+  "keywords": ["toggle", "accordion", "faq", "collapsible", "collapse", "expand"],
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".superb-accordion-title"
+    },
+    "accordionId": {
+      "type": "string"
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

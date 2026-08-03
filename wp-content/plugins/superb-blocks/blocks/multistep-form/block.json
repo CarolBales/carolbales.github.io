@@ -1,0 +1,280 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/multistep-form",
+  "version": "0.1.0",
+  "title": "Superb Multi-Step Form",
+  "category": "superb-addons-blocks",
+  "icon": "forms",
+  "description": "Break long forms into digestible steps with progress tracking, per-step validation, and smooth transitions. Premium feature.",
+  "keywords": [
+    "form",
+    "multi-step",
+    "wizard",
+    "steps",
+    "multi-page",
+    "contact"
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true,
+      "link": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true
+    }
+  },
+  "attributes": {
+    "style": {
+      "type": "object",
+      "default": {
+        "spacing": {
+          "blockGap": "var:preset|spacing|superbspacing-xsmall"
+        }
+      }
+    },
+    "formId": {
+      "type": "string"
+    },
+    "honeypotKey": {
+      "type": "string"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "successDisplayMode": {
+      "type": "string"
+    },
+    "successHeading": {
+      "type": "string"
+    },
+    "successBody": {
+      "type": "string"
+    },
+    "successShowIcon": {
+      "type": "boolean"
+    },
+    "errorHeading": {
+      "type": "string"
+    },
+    "errorBody": {
+      "type": "string"
+    },
+    "errorShowIcon": {
+      "type": "boolean"
+    },
+    "errorRetryLabel": {
+      "type": "string"
+    },
+    "summaryFieldsMode": {
+      "type": "string"
+    },
+    "summaryFieldsList": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summaryMaskSensitive": {
+      "type": "boolean"
+    },
+    "summaryShowTimestamp": {
+      "type": "boolean"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "emailEnabled": {
+      "type": "boolean"
+    },
+    "storeEnabled": {
+      "type": "boolean"
+    },
+    "storeSpamEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "emailTo": {
+      "type": "string"
+    },
+    "emailSubject": {
+      "type": "string"
+    },
+    "emailReplyTo": {
+      "type": "string"
+    },
+    "emailCC": {
+      "type": "string"
+    },
+    "emailBCC": {
+      "type": "string"
+    },
+    "sendConfirmation": {
+      "type": "boolean"
+    },
+    "confirmationSubject": {
+      "type": "string"
+    },
+    "confirmationMessage": {
+      "type": "string"
+    },
+    "confirmationEmailField": {
+      "type": "string"
+    },
+    "captchaType": {
+      "type": "string"
+    },
+    "successBehavior": {
+      "type": "string"
+    },
+    "mailchimpEnabled": {
+      "type": "boolean"
+    },
+    "mailchimpListIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "brevoEnabled": {
+      "type": "boolean"
+    },
+    "brevoListIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "labelPosition": {
+      "type": "string"
+    },
+    "submitButtonAlign": {
+      "type": "string"
+    },
+    "successShowResubmit": {
+      "type": "boolean"
+    },
+    "successResubmitLabel": {
+      "type": "string"
+    },
+    "webhookEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "webhookUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webhookMethod": {
+      "type": "string",
+      "default": "POST"
+    },
+    "webhookHeaders": {
+      "type": "array",
+      "default": []
+    },
+    "googleSheetsEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "googleSheetsSpreadsheetUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "googleSheetsSheetName": {
+      "type": "string",
+      "default": ""
+    },
+    "slackEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "slackWebhookUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "progressStyle": {
+      "type": "string",
+      "default": "numbered"
+    },
+    "transitionEffect": {
+      "type": "string",
+      "default": "slide"
+    },
+    "nextLabel": {
+      "type": "string"
+    },
+    "prevLabel": {
+      "type": "string"
+    },
+    "autoScrollEnabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowStepJumping": {
+      "type": "boolean",
+      "default": true
+    },
+    "showReviewStep": {
+      "type": "boolean",
+      "default": false
+    },
+    "reviewStepLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "reviewStepDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "reviewEditLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "showProgressLabels": {
+      "type": "boolean",
+      "default": true
+    },
+    "showProgressDescriptions": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPreview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

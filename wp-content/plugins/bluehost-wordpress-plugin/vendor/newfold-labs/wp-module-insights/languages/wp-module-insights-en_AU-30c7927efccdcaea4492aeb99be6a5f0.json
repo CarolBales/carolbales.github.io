@@ -1,0 +1,24 @@
+{
+    "translation-revision-date": "2026-07-09T05:21:02+00:00",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "src\/insights-page\/components\/ScanDiagnostics.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en_AU",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Diagnostics": [
+                "Diagnostics"
+            ],
+            "Issues that affected your scores. Expand an item for the full audit and data.": [
+                "Issues that affected your scores. Expand an item for the full audit and data."
+            ],
+            "No failing audits for this run.": [
+                "No failing audits for this run."
+            ]
+        }
+    }
+}

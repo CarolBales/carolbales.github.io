@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/reveal-buttons",
+  "version": "0.1.0",
+  "title": "Superb Reveal Buttons",
+  "category": "superb-addons-blocks",
+  "icon": "buttons",
+  "description": "Add click-to-reveal buttons for coupon codes and hidden content with a teaser preview and customizable styling.",
+  "keywords": [
+    "reveal",
+    "buttons",
+    "button",
+    "coupon",
+    "affiliate",
+    "discount",
+    "code",
+    "cta",
+    "call to action"
+  ],
+  "supports": {
+    "anchor": true,
+    "align": ["wide", "full"],
+    "html": false,
+    "__experimentalExposeControlsToChildren": true,
+    "spacing": {
+      "blockGap": true,
+      "margin": ["top", "bottom"],
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "default": {
+        "type": "flex"
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

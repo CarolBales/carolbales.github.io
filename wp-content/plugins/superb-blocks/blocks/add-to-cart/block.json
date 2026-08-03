@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/add-to-cart",
+  "version": "0.1.0",
+  "title": "Superb Add to Cart",
+  "category": "superb-addons-blocks",
+  "icon": "cart",
+  "description": "Add to Cart or Buy Now button for WooCommerce products, with direct checkout and post-add popup trigger.",
+  "keywords": ["woocommerce", "cart", "buy", "checkout", "product", "add to cart"],
+  "usesContext": ["postId", "postType"],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false,
+      "__experimentalSkipSerialization": true
+    },
+    "typography": {
+      "__experimentalSkipSerialization": true,
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalSkipSerialization": true,
+      "__experimentalDefaultControls": {
+        "radius": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalSkipSerialization": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "__experimentalSelector": ".wp-block-superb-addons-add-to-cart .wp-block-button__link"
+  },
+  "styles": [
+    {
+      "name": "fill",
+      "label": "Fill",
+      "isDefault": true
+    },
+    {
+      "name": "outline",
+      "label": "Outline"
+    }
+  ],
+  "attributes": {
+    "productId": { "type": "number", "default": 0 },
+    "productSource": { "type": "string", "default": "specific" },
+    "displayMode": { "type": "string", "default": "ajax" },
+    "buttonText": { "type": "string", "default": "" },
+    "quantity": { "type": "number", "default": 1 },
+    "quantitySelector": { "type": "string", "default": "off" },
+    "quantitySelectorPosition": { "type": "string", "default": "left" },
+    "quantityMin": { "type": "number", "default": 1 },
+    "quantityMax": { "type": "number", "default": 99 },
+    "lockedVariationId": { "type": "number", "default": 0 },
+    "coupon": { "type": "string", "default": "" },
+    "popupId": { "type": "string", "default": "" },
+    "blockId": { "type": "string", "default": "" },
+    "buttonAlign": { "type": "string" },
+    "isPreview": { "type": "boolean", "default": false }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

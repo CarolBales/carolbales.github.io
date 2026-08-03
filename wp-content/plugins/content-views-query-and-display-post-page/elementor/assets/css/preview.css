@@ -1,0 +1,27 @@
+
+div.pt-cv-pinterest .pt-cv-page:not(.cvpshuffled) {opacity:1}
+
+div.pt-cv-pinterest .pt-cv-page::before {
+	content: 'Please preview the page to see final output of this widget';
+	text-align: center;
+	background: #eee;
+	margin: 20px 0;
+	padding: 10px;
+	font-weight: 600;
+	display: block;
+}
+
+/* Show loading icon for Preview only */
+.pt-cv-pginfinite+.pt-cv-pagination-wrapper .pt-cv-more[data-elpreview] + .pt-cv-spinner {opacity: 1 !important}
+
+
+/* Style in Editor output */
+.cv-elementor-wid {
+	background: #ececec;
+	display: inline-block;
+	font-size: 13px;
+	font-family: monospace;
+}
+body.elementor-editor-active .pt-cv-wrapper:hover .cv-elementor-wid {
+	opacity: 1 !important;
+}

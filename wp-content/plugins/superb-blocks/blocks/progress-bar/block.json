@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/progress-bar",
+  "version": "0.1.0",
+  "title": "Superb Progress Bar",
+  "category": "superb-addons-blocks",
+  "icon": "chart-bar",
+  "description": "A customizable progress bar block with bar, circle, and semicircle styles.",
+  "keywords": [
+    "progress",
+    "bar",
+    "circle",
+    "gauge",
+    "percentage",
+    "skill",
+    "stats"
+  ],
+  "styles": [
+    { "name": "bar", "label": "Bar", "isDefault": true },
+    { "name": "striped-bar", "label": "Striped Bar" },
+    { "name": "circle", "label": "Circle" },
+    { "name": "glow-circle", "label": "Glow Circle" },
+    { "name": "semicircle", "label": "Semicircle" },
+    { "name": "glow-semicircle", "label": "Glow Semicircle" }
+  ],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "typography": {
+      "fontSize": false,
+      "lineHeight": false,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": false,
+      "__experimentalFontStyle": false,
+      "__experimentalTextTransform": false,
+      "__experimentalLetterSpacing": false
+    }
+  },
+  "attributes": {
+    "progressValue": { "type": "number", "default": 75 },
+    "goalValue": { "type": "number", "default": 100 },
+    "label": { "type": "string", "default": "" },
+    "showLabel": { "type": "boolean", "default": true },
+    "showPercentage": { "type": "boolean", "default": true },
+    "valueDisplay": { "type": "string", "default": "value" },
+    "prefix": { "type": "string", "default": "" },
+    "suffix": { "type": "string", "default": "%" },
+    "barHeight": { "type": "number", "default": 20 },
+    "circleSize": { "type": "number", "default": 320 },
+    "strokeWidth": { "type": "number", "default": 12 },
+    "rounded": { "type": "boolean", "default": true },
+
+    "animateOnScroll": { "type": "boolean", "default": true },
+    "animationDuration": { "type": "number", "default": 1500 },
+    "progressColor": { "type": "string" },
+    "trackColor": { "type": "string" },
+    "percentageColor": { "type": "string" },
+    "milestones": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": { "type": "number" },
+          "label": { "type": "string" }
+        }
+      }
+    }
+  },
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

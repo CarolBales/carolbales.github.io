@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "superb-addons/carousel-slide",
+  "parent": ["superb-addons/carousel"],
+  "version": "0.1.0",
+  "title": "Superb Carousel Slide",
+  "category": "superb-addons-blocks",
+  "icon": "slides",
+  "description": "A single slide within a Superb Carousel Slider block.",
+  "keywords": ["carousel", "slide", "slides", "slider"],
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "attributes": {},
+  "textdomain": "superb-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
