@@ -20,22 +20,36 @@
     "maxItems": 20
   },
   "phrases": [
-    "ux research",
-    "design strategy"
+    "standing work table",
+    "sewing table",
+    "cutting table",
+    "craft table",
+    "adjustable height work table",
+    "adjustable height table",
+    "vintage sewing patterns",
+    "sewing patterns"
   ],
   "sites": [
     {
-      "name": "Example RSS feed",
-      "type": "rss",
-      "url": "https://example.com/feed.xml",
-      "allowed": true
+      "name": "Craigslist Atlanta",
+      "type": "html",
+      "url": "https://www.craigslist.org/search/area/atlanta?cat=sse#search=2",
+      "allowed": false,
+      "notes": "Review Craigslist terms of use and robots guidance before enabling automated collection."
     },
     {
-      "name": "Example page",
+      "name": "EstateSales.net Atlanta 30307",
       "type": "html",
-      "url": "https://example.com/news",
+      "url": "https://www.estatesales.net/GA/Atlanta/30307",
       "allowed": false,
-      "notes": "Set allowed to true only after reviewing the site's terms, robots policy, and rate limits."
+      "notes": "Review EstateSales.net terms, robots guidance, and rate limits before enabling automated collection."
+    },
+    {
+      "name": "Facebook Marketplace Atlanta",
+      "type": "html",
+      "url": "https://www.facebook.com/marketplace/atlanta/",
+      "allowed": false,
+      "notes": "Facebook Marketplace typically requires login and has restrictive automation rules; use only if explicitly permitted."
     }
   ]
 }
