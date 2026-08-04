@@ -1,0 +1,41 @@
+{
+  "schedule": {
+    "cron": "0 13 * * *",
+    "timezone": "UTC"
+  },
+  "delivery": {
+    "artifactReport": true,
+    "email": {
+      "enabled": false,
+      "from": "",
+      "to": [],
+      "subject": "Morning site monitoring report"
+    }
+  },
+  "defaults": {
+    "userAgent": "CarolBalesSiteMonitor/1.0 (+https://github.com/CarolBales/carolbales.github.io)",
+    "timeoutMs": 15000,
+    "maxRetries": 2,
+    "retryDelayMs": 1000,
+    "maxItems": 20
+  },
+  "phrases": [
+    "ux research",
+    "design strategy"
+  ],
+  "sites": [
+    {
+      "name": "Example RSS feed",
+      "type": "rss",
+      "url": "https://example.com/feed.xml",
+      "allowed": true
+    },
+    {
+      "name": "Example page",
+      "type": "html",
+      "url": "https://example.com/news",
+      "allowed": false,
+      "notes": "Set allowed to true only after reviewing the site's terms, robots policy, and rate limits."
+    }
+  ]
+}
