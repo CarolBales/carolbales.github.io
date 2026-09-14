@@ -6,6 +6,12 @@ Static alternate homepage for iterative portfolio refinement without changing th
 
 - `/portfolio-v2/index.html`
 - `/portfolio-v2/styles.css`
+- `/portfolio-v2/README.md`
+
+## GitHub Pages preview
+
+- Production-style preview URL: `https://carolbales.github.io/portfolio-v2/`
+- Because `index.html` references `styles.css` relatively, the alternate page works from the `/portfolio-v2/` path on GitHub Pages without build tooling.
 
 ## Local review
 
